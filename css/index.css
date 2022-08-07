@@ -1,0 +1,539 @@
+/*-------------------------------------------MODIFICACIONES IMPORTANTES QUE NO DEBEN SER CAMBIADAS------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'popins', sans-serif;
+}
+body{
+    background: black;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------SCROLL-BAR-------------------------------------------------------*/
+/*
+body::-webkit-scrollbar{
+    width: 0px;
+}*/
+/*----------------------------------------------------HEADER CON MENU DE NAVEGACION---------------------------------------------*/
+.hero{
+    width: 100%;
+    height: 90vh;
+    /*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: grid;
+    padding: 20px;
+    height: 85px;
+}
+.nav{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20px 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+.a{
+    text-decoration: none;
+    font-size: 18.5px;
+    color: #fff;
+}
+.b{
+    text-decoration: none;
+    font-size: 18.5px;
+    color: rgb(27, 97, 228); 
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------ELEMENTOS DE TEXTO DENTO DEL HEADER-------------------------------------------------------*/
+.container{
+    justify-content: center;
+    padding-top: 320px;
+    width: 90%;
+    margin:0 auto;
+    overflow: hidden;
+    text-align: center;   
+}
+/*-----------------------------------ESTE ELEMENTO NO ESTARA VISIBLE HASTA NUEVA ACTUALIZACION--------------------------------------------*/
+.desv{
+    opacity: 0%;
+    color: #fff;
+    padding-bottom: 30px; /*---------------------NO COMENTAR ESTAS LINEAS DE CODIGO-------------------------------------------------------*/
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+.title{
+    position: relative;
+    font-size: 65px;
+    color: #fff;
+    font-weight: 600;
+}
+.paragraph{
+    position: relative;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 20px; 
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------VIDEO DE FONDO CON GRADIENTE---------------------------------------------------------*/
+.video{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /*-----------------------------------PROXIMA ACTUALIZACION PENDIENTE NEW VIDEO COMING SOON--------------------------------------------*/
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------MAIN----------------------------------------------------------------*/
+.cont{
+    display: flex;
+    justify-content: center;
+}
+/*--------------------------------------TODO ESTO ES EL CONTENEDOR DE ICONOS DE TRIGO, APPLE Y AWARDS------------------------------------*/
+.conten{
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.awards{
+    padding-right: 12px;
+    padding-left: 12px;
+}
+/*---------------------------------------------CONTEN2 ES LA SECCION DE LOS BOTONES BLANCO Y AZUL---------------------------------------*/
+.conten2{
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.subtitle{
+    color: rgb(195, 194, 194);
+    font-size: 15px;
+}
+.sub{
+    color: rgb(161, 160, 161);
+    
+}
+/*----------------------------------------------ALGUNOS ICONOS DE LA SECCION ANTERIOS ESTAN AQUI-----------------------------------------*/
+.apple{
+    padding-right: 9px;
+    width: 37px;
+    height: 30px;
+}
+.corn{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 40px;
+    height: 50px;
+}
+.padding{
+    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.padding_buy{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.l_m{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    font-size: 13px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.buy{
+    text-decoration: none;
+    background-color: #0076ff;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------ESTA ES LA SECCION DE LAS TARJETAS TAGG QUE CONTIENEN IMAGENES Y TEXTOS---------------------------*/
+.pro__padding{
+    display: flex;
+    justify-content: center;
+    padding:90px;
+    padding-bottom: 50px;
+
+}
+.p_img{
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    width: 1000px;
+    height: 450px;
+    cursor: pointer;
+}
+.update{
+    position: absolute;
+    padding-top: 170px;
+    padding-right: 470px;
+    color: rgb(1, 87, 214);
+    font-size: 11px;
+}
+.title_tag{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 190px;
+    padding-right: 600px;
+    padding-left: 140px;
+    font-size: 40px;
+    color: #fff;
+}
+.contenedor_tag{
+    width: 90%;
+    max-width: 1000px;
+    height: 450px;
+    margin: 155px auto 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.tag1{
+    width: 410px;
+    height: 100%;
+}
+.tag2{
+    width: 550px;
+    height: 100%;
+}
+.tag{
+    border-radius: 20px;
+}
+.p1{
+    padding-top: 30px;
+    padding-left: 130px;
+    font-size: 13px;
+    position: absolute;
+    color: #da1852;
+    opacity: 1;
+}
+.p2{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 13px;
+    position: absolute;
+    color: rgb(169, 168, 168);
+    opacity: 1;
+}
+.texto{
+    font-size: 33px;
+    position: absolute;
+    color: #fff;
+}
+.text_position1{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.text_position2{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+/*-------------------------------------------SECCION QUE SE CONOCE COMO KNOWLEDGE----------------------------------------------*/
+.other_title{
+    width: 73%;
+    margin: 0px auto 40px;
+}
+.insight{
+    font-size: 15.3px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 50%;
+    padding-bottom: 8px;
+}
+.catch{
+    color: #fff;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------SECCION DE RECONOCIMIENTO Y ARTISTAS-----------------------------------------------*/
+.new_secction{
+    margin: 0px 185px 40px;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    border-radius: 10px;
+    width: 130px;
+    height: 100%;
+}
+.image2{
+    border-radius: 10px;
+    width: 150px;
+    height: 100%;
+}
+.a_ref{
+    padding-left: 20px;
+    font-size: 11px;
+    color: rgb(236, 84, 159);
+    text-decoration: none;
+}
+.a_ref1{
+    padding-left: 20px;
+    font-size: 11px;
+    color: rgb(84, 108, 255);
+    text-decoration: none;
+}
+.info{
+    padding-left: 20px;
+    font-size: 12px;
+    color: rgb(124, 123, 123);
+}
+.know{
+    padding-left:20px ;
+    padding-right: 30px;
+    font-size: 15px;
+    color: #fff;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------ESTA ES LA SEGUNDA SECCION DE LAS TARJETAS TAGG-------------------------------------------*/
+/*---------------------------------RELATIVAMENTE MAS ORGANIZADAS QUE LAS SECCIONES ANTERIORES--------------------------------------*/
+.flex_container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin: 120px auto 30px;
+    width: 73%;
+    height: 450px;
+}
+.video2{
+    border-radius: 20px;
+    width: 367px;
+    height: 100%;
+}
+/*----------------------LOS LAYOUT SON IMAGENES POR ENCIMA DE LAS VISIBLES PARA DARLE UN ASPECTO MAS ESTILIZADO----------------------*/
+.layout{
+    position: absolute;
+    opacity: 35%;
+    border-radius: 20px;
+    width: 367px;
+    height: 450px;
+}
+/*---------------CADA LAYOUT TIENE TAMAÑOS Y OPACIDADES DIFERENTES DEPENDIENDO DEL TIPO DE IMAGEN O VIDEO QUE HAYA DEBAJO-------------*/
+.photo1{
+    z-index: -1;
+    border-radius: 20px;
+    width: 590px;
+    height: 100%;
+}
+.flex_container1{
+    display: flex;
+    flex-flow:wrap;
+    justify-content:space-between;
+    margin: 40px auto 90px;
+    width: 73%;
+    height: 450px;
+}
+/*---------------A PARTIR DE ACA TODO EL CONTENIDO TANTO TARJETAS TAGG COMO TEXTOS ETC. TIENEN EL MISMO TAMAÑO DE CONTENIDO-------------*/
+.photo4{
+    z-index: -1;
+    width: 380px;
+    height: 205px;
+}
+.team{
+    margin-top: 240px;
+    z-index: -1;
+    position: absolute;
+    width: 380px;
+    height: 210px;
+}
+.educ{
+    z-index: -1;
+    height: 450px;
+    width: 580px;
+}
+.photo{
+    border-radius: 20px;
+}
+/*----------------------------------------------------SECCION EXCLUSIVA DE ALGUNOS LAYOUTS------------------------------------------------*/
+.layout1{
+    opacity: 40%;
+    position: absolute;
+    border-radius: 20px;
+    width: 580px;
+    height: 450px;
+}
+.layout2{
+    opacity: 15%;
+    position: absolute;
+    width: 380px;
+    height: 205px;
+}
+.layout3{
+    opacity: 30%;
+    position: absolute;
+    border-radius: 20px;
+    width: 590px;
+    height: 450px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+.tagg{
+    z-index: 1;
+    position: absolute;
+    padding-top: 35px;
+    padding-left: 40px;
+}
+.tagged{
+    font-size: 11px;
+    padding-top: 21px;
+    padding-left: 40px;
+    z-index: 1;
+    position: absolute;
+}
+.get_started{
+    z-index: 1;
+    position: absolute;
+    color: black;
+}
+.beginner{
+    opacity: 95%;
+    z-index: 1;
+    position: absolute;
+    color: rgb(23, 23, 23)
+}
+.folio{
+    opacity: 75%;
+    color: #fff;
+}
+.share{
+    color: #fff;
+}
+.accesibility{
+    opacity: 95%;
+    color: rgb(23, 23, 23)
+}
+.education{
+    opacity: 75%;
+    color: #fff;
+}
+.unleash{
+    color: #fff;
+}
+.tagged1{
+    font-size: 11px;
+    padding-top: 260px;
+    padding-left: 40px;
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+}
+.team_p{
+    padding-top: 280px;
+    padding-left: 40px;
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------FOOTER----------------------------------------------------------------*/
+.footer_bg{
+    padding-top: 30px;
+    background: #0c0c0c9a;
+    width: 100%;
+    height: 450px;
+}
+.mini_pad{
+    padding-top: 30px;
+}
+.footer_conten{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 360px;
+}
+.div_container{
+    width: 100%;
+    height: 87%;
+    border-bottom: .1px solid white;
+}
+.bg_colour1{
+    text-align: start;
+    width: 310px;
+}
+.bg_colour2{
+    text-align: start;
+    width: 250px;
+}
+.bg_colour3{
+    text-align: start;
+    width: 290px;
+}
+.bg_colour4{
+    text-align: start;
+    width: 120px;
+}
+.item_title{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.item_title:hover{
+    text-decoration-line: underline;
+}
+.item_text{
+    font-size: 12px;
+    padding-top: 15px;
+    color: rgb(96, 96, 96);
+}
+.item_text:hover{
+    text-decoration-line: underline;
+}
+.last{
+    margin: 0px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+    height: 60px;
+}
+.border_top{
+    width: 100%;
+    border-top: 1px solid rgb(45, 45, 45);
+}
+.mini_footer{
+    padding-top: 6px;
+}
+.footer_title{
+    font-size: 10px;
+    color: rgb(127, 127, 127);
+}
+.footer_p{
+    font-size: 10px;
+    color: rgb(91, 91, 91);
+}
